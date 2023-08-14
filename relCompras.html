@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head> 
+    <title>BBB - Comprar e vender - Cadastro de {{titulo}}</title>
+</head>
+
+<body>
+    <h4>Lista de {{titulo}}</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descricao</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for relatorios in relatorios %}
+                <tr>
+                    <td>{{ anuncio.nome }}</td>
+                    <td>{{ anuncio.qtd }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
+
